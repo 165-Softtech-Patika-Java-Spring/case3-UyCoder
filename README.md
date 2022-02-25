@@ -1,5 +1,36 @@
 # Case3
+## Ödev şu şekilde tamalandı:
 
+### Bu Spring project'i için Maven'e eklenen dependency'ler:
+
+- Spring Web
+- Spring Data JPA
+- PostgreSQL
+- LOMBOK
+- Swagger
+
+### isimlendirmeler
+- Ürün  - Product
+- Kullanıcı  - User
+- Yorum  - Comment
+
+### Önce taleplere göre databşe mimarını aşağıdaki şekilde yapmaya çalıştım.
+
+|USER| PRODUCT | COMMENT|
+| ---| --- | ---|
+|USER_ID|PRODUCT_ID|COMMENT_ID|
+|USER_NAME|PRODUCT_NAME|COMMENT_TEXT|
+|USER_EMAIL |PRODUCT_PRICE|COMMENT_USER_ID|
+|USER_PHONE_NUMBER|.|COMMENT_PRODUCT_ID
+|USER_TYPE| |
+
+
+
+
+
+
+
+# Ödev Talepleri
 Bir online alışveriş sitesinin kullanıcı yorumlarını yöneten bir api yazınız.
 - Bir kullanıcının sadece bir e-maili ve bir telefon numarası olabilir.
 - Aynı kullanıcı adı, telefon ya da e-mail ile kayıt yapılamaz.
