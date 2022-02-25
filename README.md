@@ -16,13 +16,13 @@
 
 ### Önce taleplere göre databşe mimarını aşağıdaki şekilde yapmaya çalıştım.
 
-|USER| PRODUCT | COMMENT|
-| ---| --- | ---|
-|USER_ID|PRODUCT_ID|COMMENT_ID|
-|USER_NAME|PRODUCT_NAME|COMMENT_TEXT|
-|USER_EMAIL |PRODUCT_PRICE|COMMENT_USER_ID|
-|USER_PHONE_NUMBER|.|COMMENT_PRODUCT_ID
-|USER_TYPE| |
+| USER         | PRODUCT | COMMENT    |
+|--------------|---------|------------|
+| ID           | ID      | ID         |
+| NAME         | NAME    | TEXT       |
+| EMAIL        | PRICE   | ID_USER    |
+| PHONE_NUMBER |         | ID_PRODUCT |
+| USER_TYPE    |         |
 
 <img src='https://user-images.githubusercontent.com/50663127/155712449-526040e8-eae0-4d8c-ab63-ed59e69c4819.PNG' width='600'>
 
@@ -36,19 +36,20 @@ Bir online alışveriş sitesinin kullanıcı yorumlarını yöneten bir api yaz
 - Bir kullanıcının sadece bir e-maili ve bir telefon numarası olabilir.
 - Aynı kullanıcı adı, telefon ya da e-mail ile kayıt yapılamaz.
 - Kullanıcı tipi kişi ya da kurum olabilir.
-1. Ürün controller ında;
 
 
 
--  **Ürün kaydeden bir servis yazınız.**
+1. **Ürün controller ında;**
+
+ - Ürün kaydeden bir servis yazınız.
   
  - Ürünleri listeleyebilen bir servis yazınız.
   
-  - Ürün idsinden ürünü bulan bir servis yazınız.
+ - Ürün idsinden ürünü bulan bir servis yazınız.
   
-  - Ürün silen bir metot yazınız.
+ - Ürün silen bir metot yazınız.
   
-  - Ürün fiyatı güncelleyen bir metot yazınız. (Sadece fiyat)
+ - Ürün fiyatı güncelleyen bir metot yazınız. (Sadece fiyat)
   
   
   
