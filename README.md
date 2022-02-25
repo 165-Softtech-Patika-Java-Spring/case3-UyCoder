@@ -24,7 +24,6 @@
 |USER_PHONE_NUMBER|.|COMMENT_PRODUCT_ID
 |USER_TYPE| |
 
-![03](https://user-images.githubusercontent.com/50663127/155712449-526040e8-eae0-4d8c-ab63-ed59e69c4819.PNG)
 <img src='https://user-images.githubusercontent.com/50663127/155712449-526040e8-eae0-4d8c-ab63-ed59e69c4819.PNG' width='600'>
 
 
