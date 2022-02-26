@@ -27,6 +27,60 @@
 <img src='https://user-images.githubusercontent.com/50663127/155712449-526040e8-eae0-4d8c-ab63-ed59e69c4819.PNG' width='600'>
 
 
+## Proje'nin dosya yapısı:
+```bash
+case3
+│  .gitignore
+│  case3.iml
+│  HELP.md
+│  mvnw
+│  pom.xml
+└─src
+   ├─main
+   │  ├─java
+   │  │  └─dev
+   │  │      └─ahmed
+   │  │          └─case3
+   │  │              │  Case3Application.java
+   │  │              │
+   │  │              ├─controller
+   │  │              │      CommentController.java
+   │  │              │      ProductController.java
+   │  │              │      UserController.java
+   │  │              │
+   │  │              ├─dao
+   │  │              │      CommentDao.java
+   │  │              │      ProductDao.java
+   │  │              │      UserDao.java
+   │  │              │
+   │  │              ├─dto
+   │  │              ├─entity
+   │  │              │      Comment.java
+   │  │              │      Product.java
+   │  │              │      User.java
+   │  │              │
+   │  │              └─service
+   │  │                  │  Service.java
+   │  │                  │
+   │  │                  └─entityservice
+   │  │                          CommentEntityService.java
+   │  │                          ProductEntityService.java
+   │  │                          UserEntityService.java
+   │  │
+   │  └─resources
+   │      │  application.properties
+   │      │
+   │      ├─static
+   │      └─templates
+   └─test
+       └─java
+           └─dev
+               └─ahmed
+                   └─case3
+                           Case3ApplicationTests.java
+
+
+```
 
 
 
