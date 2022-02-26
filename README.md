@@ -9,10 +9,12 @@
 - LOMBOK
 - Swagger
 
-### isimlendirmeler
-- Ürün  - Product
-- Kullanıcı  - User
-- Yorum  - Comment
+### isimlendirmeler:
+| Turkce | Enlish Name |
+|--------|-------------|
+| Ürün   | Product     |
+| Kullanıcı | User        |  
+| Yorum  | Comment     |
 
 ### Önce taleplere göre databşe mimarını aşağıdaki şekilde yapmaya çalıştım.
 
@@ -26,7 +28,7 @@
 
 <img src='https://user-images.githubusercontent.com/50663127/155712449-526040e8-eae0-4d8c-ab63-ed59e69c4819.PNG' width='600'>
 
-### Proje'nin dosya yapisi
+### Proje'nin dosya yapisi:
 ```bash
 case3
 │  .gitignore
