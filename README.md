@@ -1,6 +1,14 @@
 # Case3
 ## Ödev şu şekilde tamalandı:
 
+
+### isimlendirmeler:
+| Turkce | Enlish Name |
+|--------|-------------|
+| Ürün   | Product     |
+| Kullanıcı | User     |  
+| Yorum  | Comment     |
+
 ### Bu Spring project'i için Maven'e eklenen dependency'ler:
 
 - Spring Web
@@ -8,13 +16,6 @@
 - PostgreSQL
 - LOMBOK
 - Swagger
-
-### isimlendirmeler:
-| Turkce | Enlish Name |
-|--------|-------------|
-| Ürün   | Product     |
-| Kullanıcı | User        |  
-| Yorum  | Comment     |
 
 ### Önce taleplere göre databşe mimarını aşağıdaki şekilde yapmaya çalıştım.
 
