@@ -1,6 +1,4 @@
-# Case3
 ## Ödev şu şekilde tamalandı:
-
 
 ### isimlendirmeler:
 | Turkce | Enlish Name |
@@ -78,8 +76,8 @@ case3
 
 
 
-
-# Ödev Talepleri
+# Case3
+## Ödev Talepleri
 Bir online alışveriş sitesinin kullanıcı yorumlarını yöneten bir api yazınız.
 - Bir kullanıcının sadece bir e-maili ve bir telefon numarası olabilir.
 - Aynı kullanıcı adı, telefon ya da e-mail ile kayıt yapılamaz.
