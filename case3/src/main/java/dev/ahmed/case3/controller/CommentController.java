@@ -24,8 +24,8 @@ public class CommentController {
     public final CommentEntityService commentEntityService;
 
     // Bir kullanıcının yaptığı yorumlari getiren bir servis yazınız.
-        // Eğer ilgili kullanıcının henüz bir yorumu yoksa
-        // “XXX kullanıcı henüz bir yorum yazmamıştır” şeklinde bir hata vermeli.
+         // Eğer ilgili kullanıcının henüz bir yorumu yoksa
+         // “XXX kullanıcı henüz bir yorum yazmamıştır” şeklinde bir hata vermeli.
     @GetMapping("/{userId}")
     public ResponseEntity findAllByUserId(@PathVariable Long userId) {
         List<Comment> comments = commentEntityService.findAllByUserId(userId);
@@ -34,8 +34,13 @@ public class CommentController {
 
 
     //Bir ürüne yapılan tüm yorumları getiren bir servis yazınız.
-        // Eğer o ürüne henüz bir yorum yazılmamışsa
-        // “XXX ürüne henüz bir yorum yazılmamıştır” şeklinde bir hata vermeli.
+         // Eğer o ürüne henüz bir yorum yazılmamışsa
+         // “XXX ürüne henüz bir yorum yazılmamıştır” şeklinde bir hata vermeli.
+    @GetMapping("/{productId}")
+    public ResponseEntity findAllByProductId(@PathVariable Long idProduct) {
+        List<Comment> comments = commentEntityService.findAllByProductId(idProduct);
+        return ResponseEntity.ok(comments);
+    }
 
 
     //Yeni bir yorum yazılabilecek bir servis yazınız.

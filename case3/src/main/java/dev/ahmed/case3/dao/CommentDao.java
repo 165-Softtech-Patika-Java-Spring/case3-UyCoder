@@ -15,4 +15,6 @@ import java.util.List;
 @Repository
 public interface CommentDao extends JpaRepository<Comment, Long> {
     List<Comment> findAllByIdUser(Long idUser);
+    List<Comment> findAllByIdProduct(Long idProduct);
+
 }

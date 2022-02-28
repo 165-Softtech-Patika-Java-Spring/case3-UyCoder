@@ -32,7 +32,7 @@ public class UserController {
         return ResponseEntity.ok(users);
     }
 
-    //Kullanıcı idsinden kullanıcıyı getiren bir servis yazınız.
+    //Kullanıcı id'sinden kullanıcıyı getiren bir servis yazınız.
     @GetMapping("/{id}")
     public ResponseEntity findAllUserById(@PathVariable Long id) {
         User user = userEntityService.findAllUserById(id);
@@ -54,8 +54,8 @@ public class UserController {
     }
 
     // Kullanıcı silebilecek bir servis yazınız.(kullanıcı adı, ve telefon bilgileri alınmalı).
-    // Eğer kullanıcı adı ve telefon uyuşmuyorsa
-    // “XXX kullanıcı adı ile YYY telefonu bilgileri uyuşmamaktadır.” şeklinde bir uyarı vermeil.
+            // Eğer kullanıcı adı ve telefon uyuşmuyorsa
+             // “XXX kullanıcı adı ile YYY telefonu bilgileri uyuşmamaktadır.” şeklinde bir uyarı vermeil.
     @DeleteMapping
     public ResponseEntity deleteUser(Long id){
         userEntityService.deleteUserById(id);

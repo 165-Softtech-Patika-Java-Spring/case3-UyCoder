@@ -18,13 +18,6 @@
 
 ### Önce taleplere göre databşe mimarını aşağıdaki şekilde yapmaya çalıştım.
 
-| USER         | PRODUCT | COMMENT    |
-|--------------|---------|------------|
-| ID           | ID      | ID         |
-| NAME         | NAME    | TEXT       |
-| EMAIL        | PRICE   | ID_USER    |
-| PHONE_NUMBER |         | ID_PRODUCT |
-| USER_TYPE    |         |
 
 <img src='https://user-images.githubusercontent.com/50663127/155712449-526040e8-eae0-4d8c-ab63-ed59e69c4819.PNG' width='600'>
 

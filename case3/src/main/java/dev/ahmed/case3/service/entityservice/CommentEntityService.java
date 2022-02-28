@@ -1,6 +1,7 @@
 package dev.ahmed.case3.service.entityservice;
 
 import dev.ahmed.case3.dao.CommentDao;
+import dev.ahmed.case3.dao.ProductDao;
 import dev.ahmed.case3.dao.UserDao;
 import dev.ahmed.case3.entity.Comment;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +23,7 @@ public class CommentEntityService {
 
     private final CommentDao commentDao;
     private final UserDao userDao;
+    private final ProductDao productDao;
 
     public List<Comment> findAll() {
         return commentDao.findAll();
@@ -39,6 +41,17 @@ public class CommentEntityService {
             String errorCode = userDao.findUserById(userId).getName() + "adindaki kullanıcı henüz bir yorum yazmamıştır";
             throw new NotFoundException(errorCode);
         }
+    }
+
+    public List<Comment> findAllByProductId(Long idProduct){
+        List<Comment> commentList = commentDao.findAllByIdProduct(idProduct);
+        if (commentList != null) {
+            return commentList;
+        } else {
+            String errorCode = productDao.findById(idProduct) + "adindaki ürüne henüz bir yorum yazılmamıştır";
+            throw new NotFoundException(errorCode);
+        }
+
     }
 
     public void deleteComment(Long id) {
